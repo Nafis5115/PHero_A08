@@ -5,10 +5,10 @@ const TrendingApps = ({ appsData }) => {
   const apps = appsData.slice(0, 8);
   return (
     <div className="mt-8 mx-6 md:mx-12 text-[#001931]">
-      <h1 className="flex justify-center text-[40px] font-bold ">
+      <h1 className="flex justify-center text-[34px] md:text-[40px] font-bold ">
         Trending Apps
       </h1>
-      <p className="font-light mb-8 flex justify-center">
+      <p className="font-light mb-8 text-[14px] md:text-[18px] text-center flex justify-center">
         Explore All Trending Apps on the Market developed by us
       </p>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">

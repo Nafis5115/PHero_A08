@@ -4,15 +4,15 @@ const Trusted = () => {
   return (
     <div className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] py-12">
       <div className="flex flex-col items-center">
-        <h1 className="font-bold text-white text-[26px] md:text-[32px] mb-8">
+        <h1 className="font-bold text-white text-[22px] md:text-[32px] mb-8">
           Trusted by Millions, Built for You
         </h1>
-        <div className="flex gap-14 mx-4 ">
+        <div className="flex gap-6 md:gap-14 mx-6 md:mx-0 ">
           <div className="flex flex-col items-center">
             <p className="text-[12px] md:text-[14px] text-white/65 font-light">
               Total Downloads
             </p>
-            <h1 className="text-[36px] md:text-[42px] font-bold text-white ">
+            <h1 className="text-[28px] md:text-[42px] font-bold text-white ">
               29.6M
             </h1>
             <p className="text-[12px] md:text-[14px] text-center text-white/65 font-light">
@@ -23,7 +23,7 @@ const Trusted = () => {
             <p className="text-[12px] md:text-[14px] text-white/65 font-light">
               Total Reviews
             </p>
-            <h1 className="text-[36px] md:text-[42px] font-bold text-white ">
+            <h1 className="text-[28px] md:text-[42px] font-bold text-white ">
               906K
             </h1>
             <p className="text-[12px] md:text-[14px] text-center text-white/65 font-light">
@@ -34,7 +34,7 @@ const Trusted = () => {
             <p className="text-[12px] md:text-[14px] text-white/65 font-light">
               Active Apps
             </p>
-            <h1 className="text-[36px] md:text-[42px] font-bold text-white ">
+            <h1 className="text-[28px] md:text-[42px] font-bold text-white ">
               132+
             </h1>
             <p className="text-[12px] md:text-[14px] text-center text-white/65 font-light">

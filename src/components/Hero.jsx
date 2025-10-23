@@ -1,6 +1,7 @@
 import React from "react";
 import playStore from "../assets/playstore.png";
 import appStore from "../assets/appstore.png";
+import heroImage from "../assets/hero.png";
 const Hero = () => {
   return (
     <div className="flex flex-col  items-center mt-8 text-[#001931]">
@@ -32,7 +33,7 @@ const Hero = () => {
           <span className="font-semibold">App Store</span>
         </a>
       </div>
-      <img className="w-110 md:w-fit" src="src/assets/hero.png" alt="" />
+      <img className="w-110 md:w-fit" src={heroImage} alt="" />
     </div>
   );
 };
