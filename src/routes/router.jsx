@@ -13,27 +13,33 @@ const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
-        loader: () => {
-          const appsPromise = fetch("/data.json").then((res) => res.json());
-          return appsPromise;
+        loader: async () => {
+          const response = await fetch("/data.json");
+          if (!response.ok) throw new Error("Failed to load apps data");
+          const data = await response.json();
+          return data;
         },
         HydrateFallback: () => {},
       },
       {
         path: "apps",
         Component: Apps,
-        loader: () => {
-          const allAppsPromise = fetch("public/data.json");
-          return allAppsPromise;
+        loader: async () => {
+          const response = await fetch("/data.json");
+          if (!response.ok) throw new Error("Failed to load apps data");
+          const data = await response.json();
+          return data;
         },
         HydrateFallback: () => {},
       },
       {
         path: "installation",
         Component: Installation,
-        loader: () => {
-          const installedAppsPromise = fetch("public/data.json");
-          return installedAppsPromise;
+        loader: async () => {
+          const response = await fetch("/data.json");
+          if (!response.ok) throw new Error("Failed to load apps data");
+          const data = await response.json();
+          return data;
         },
         HydrateFallback: () => {},
       },
