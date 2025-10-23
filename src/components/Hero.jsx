@@ -3,14 +3,14 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="flex flex-col  items-center mt-8 text-[#001931]">
-      <h1 className="text-[50px] font-bold leading-14 text-center">
+      <h1 className="text-[44px] md:text-[50px] font-bold leading-14 text-center">
         We Build <br />
         <span className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
           Productive
         </span>{" "}
         Apps
       </h1>
-      <p className="text-center font-light mt-3">
+      <p className="text-center mx-4 font-light mt-3">
         At HERO.IO , we craft innovative apps designed to make everyday life
         simpler, smarter, and more exciting. <br /> Our goal is to turn your
         ideas into digital experiences that truly make an impact.
@@ -31,7 +31,7 @@ const Hero = () => {
           <span className="font-semibold">App Store</span>
         </a>
       </div>
-      <img src="src/assets/hero.png" alt="" />
+      <img className="w-110 md:w-fit" src="src/assets/hero.png" alt="" />
     </div>
   );
 };
