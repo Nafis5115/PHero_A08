@@ -12,9 +12,11 @@ const TrendingApps = ({ appsData }) => {
         Explore All Trending Apps on the Market developed by us
       </p>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        {apps.map((app) => (
-          <AppCard key={app.id} app={app}></AppCard>
-        ))}
+        {Array.isArray(apps) ? (
+          apps.map((app) => <AppCard key={app.id} app={app} />)
+        ) : (
+          <p>No apps found</p>
+        )}
       </div>
       <Link to={"apps"} className="flex justify-center items-center">
         <button className="my-8 font-semibold px-6 py-2 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white rounded-md hover:opacity-90 transition-all">
