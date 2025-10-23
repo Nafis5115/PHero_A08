@@ -35,17 +35,19 @@ const Apps = ({ allAppsPromise }) => {
   }, [searchInput, allApps]);
 
   return (
-    <div className="mx-4 md:mx-12 mt-8 text-[#001931]">
-      <h1 className="text-[40px] font-bold flex flex-col items-center">
+    <div className="mx-6 md:mx-12 mt-8 text-[#001931]">
+      <h1 className="text-[34px] md:text-[40px]  font-bold flex flex-col items-center">
         Our All Applications
       </h1>
-      <p className="font-light mb-8 flex flex-col items-center">
+      <p className="font-light text-[14px] md:text-[18px] text-center mb-8 flex flex-col items-center">
         Explore All Apps on the Market developed by us. We code for Millions
       </p>
 
       <div className="flex justify-between">
-        <h1 className="font-semibold">({allApps.length}) Apps Found</h1>
-        <label className="input bg-transparent border border-black/20">
+        <h1 className="font-semibold text-[14px] md:text-[18px]">
+          ({allApps.length}) Apps Found
+        </h1>
+        <label className="input w-60 md:w-100 bg-transparent border border-black/20">
           <svg
             className="h-[1em] opacity-50"
             xmlns="http://www.w3.org/2000/svg"

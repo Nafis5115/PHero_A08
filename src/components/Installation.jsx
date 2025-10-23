@@ -39,11 +39,11 @@ const Installation = ({ installedAppsPromise }) => {
   };
 
   return (
-    <div className="mx-4 md:mx-12 mt-8 text-[#001931]">
-      <h1 className="text-[40px] font-bold flex flex-col items-center">
+    <div className="mx-6 md:mx-12 mt-8 text-[#001931]">
+      <h1 className="text-[34px] md:text-[40px] font-bold flex flex-col items-center">
         Your Installed Apps
       </h1>
-      <p className="font-light mb-8 flex flex-col items-center">
+      <p className="font-light mb-8 text-[14px] md:text-[18px] text-center flex flex-col items-center">
         Explore All Trending Apps on the Market developed by us
       </p>
       <div className="flex justify-between">

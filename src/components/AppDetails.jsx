@@ -25,10 +25,10 @@ const AppDetails = () => {
   };
 
   return (
-    <div className="mx-12 text-[#001931] mt-12">
-      <div className="flex gap-6 items-center">
+    <div className="mx-6 md:mx-12 text-[#001931] mt-12">
+      <div className="flex flex-col items-start md:flex-row gap-6 md:items-center">
         <img className="shadow" src={app.image} alt="" />
-        <div className="flex-1">
+        <div className="flex-1 mt-4 md:mt-0">
           <h1 className="font-bold text-2xl">{app.title}</h1>
           <p>
             <span className="font-thin">Developed by</span>{" "}
@@ -36,7 +36,7 @@ const AppDetails = () => {
               {app.companyName}
             </span>
           </p>
-          <div className="h-[1px] w-full bg-black/20 my-4"></div>
+          <div className="h-[1px]  w-109 md:w-full bg-black/20 my-4"></div>
           <div className="flex gap-14">
             <div>
               <Download size={30} className="text-[#00D390]" />
