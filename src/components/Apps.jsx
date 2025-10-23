@@ -77,9 +77,11 @@ const Apps = ({ allAppsPromise }) => {
         <Spinner />
       ) : filteredApps.length !== 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 my-8">
-          {filteredApps.map((app) => (
-            <AppCard key={app.id} app={app} />
-          ))}
+          {Array.isArray(filteredApps) ? (
+            filteredApps.map((app) => <AppCard key={app.id} app={app} />)
+          ) : (
+            <p>No apps found</p>
+          )}
         </div>
       ) : (
         <h1 className="font-semibold flex justify-center items-center mt-12">
