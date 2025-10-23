@@ -14,7 +14,7 @@ const router = createBrowserRouter([
         index: true,
         Component: Home,
         loader: () => {
-          const appsPromise = fetch("public/data.json");
+          const appsPromise = fetch("/data.json").then((res) => res.json());
           return appsPromise;
         },
         HydrateFallback: () => {},

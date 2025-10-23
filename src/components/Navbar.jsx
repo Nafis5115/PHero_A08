@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router";
-
+import logo from "../assets/logo.png";
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("Home");
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow px-6 md:px-12 py-3 flex items-center justify-between relative">
       <Link to={"/"} className="flex items-center gap-1 cursor-pointer">
-        <img className="h-10" src="src/assets/logo.png" alt="Logo" />
+        <img className="h-10" src={logo} alt="Logo" />
         <h1 className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-semibold text-lg">
           HERO.IO
         </h1>
