@@ -1,5 +1,8 @@
 import React from "react";
 import logo from "../assets/logo.png";
+import twitter from "../assets/twitter.png";
+import linkedin from "../assets/linkedin.png";
+import facebook from "../assets/facebook.png";
 const Footer = () => {
   return (
     <div className="bg-[#001931]  w-full px-6 md:px-12 py-5">
@@ -11,21 +14,9 @@ const Footer = () => {
         <div className="flex flex-col items-center">
           <h1 className="font-semibold text-white">Social Links</h1>
           <div className="flex gap-3 mt-2">
-            <img
-              className="cursor-pointer"
-              src="src/assets/twitter.png"
-              alt=""
-            />
-            <img
-              className="cursor-pointer"
-              src="src/assets/linkedin.png"
-              alt=""
-            />
-            <img
-              className="cursor-pointer"
-              src="src/assets/facebook.png"
-              alt=""
-            />
+            <img className="cursor-pointer" src={twitter} alt="" />
+            <img className="cursor-pointer" src={linkedin} alt="" />
+            <img className="cursor-pointer" src={facebook} alt="" />
           </div>
         </div>
       </div>

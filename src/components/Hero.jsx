@@ -1,5 +1,6 @@
 import React from "react";
-
+import playStore from "../assets/playstore.png";
+import appStore from "../assets/appstore.png";
 const Hero = () => {
   return (
     <div className="flex flex-col  items-center mt-8 text-[#001931]">
@@ -20,14 +21,14 @@ const Hero = () => {
           href="https://play.google.com/store/games?hl=en"
           className="flex items-center border border-[#D2D2D2] gap-2 px-4 py-2 rounded-sm cursor-pointer"
         >
-          <img src="src/assets/playstore.png" alt="" />
+          <img src={playStore} alt="" />
           <span className="font-semibold">Google Play</span>
         </a>
         <a
           href="https://www.apple.com/app-store/"
           className="flex items-center border border-[#D2D2D2] gap-2 px-4 py-2 rounded-sm cursor-pointer"
         >
-          <img src="src/assets/appstore.png" alt="" />
+          <img src={appStore} alt="" />
           <span className="font-semibold">App Store</span>
         </a>
       </div>
